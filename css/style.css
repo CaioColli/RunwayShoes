@@ -1,0 +1,21 @@
+@import url('header.css');
+@import url('promo_flash.css');
+@import url('news.css');
+
+@import url('modal.css');
+
+:root {
+    --orange_color: #DC7413;
+    --white_color: #fff;
+    --green_color: #3BA92A;
+    --red_color: #990000;
+    --gray_color: #BDBDBD;
+    --black_color: #000000
+}
+
+body {
+    font-family: "helvetica";
+    src: url("fonts/helvetica.ttf");
+    background-color: #E4E4E4;
+    font-size: .875rem;
+}

@@ -1,0 +1,218 @@
+header {
+    margin-bottom: 1rem;
+}
+
+/* Div Promo_flash */
+
+.promo_flash {
+    align-items: center;
+    background-color: #000000;
+    display: flex;
+    height: 1.875rem;
+    position: relative;
+    justify-content: center;
+}
+
+.flash_promo_paragraph {
+    color: var(--white_color);
+    padding: 0 .3125rem;
+}
+
+.flash_promo_icon_arrow_down {
+    position: absolute;
+    right: 6rem;
+}
+
+.flash_promo_icon_arrow_up {
+    display: none;
+    position: absolute;
+    right: 6rem;
+}
+
+/* Div Promo_flash */
+
+/* Div Promo_flash More*/
+
+.promo_flash_abaut {
+    background-color: #000000;
+    display: none;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+}
+
+.promo_flash_abaut_tittle {
+    color: var(--white_color);
+    padding: .9375rem 0 .625rem .625rem;
+}
+
+.promo_flash_abaut_tittle_strong {
+    font-weight: bold;
+    color: var(--orange_color);
+}
+
+.promo_flash_abaut_paragraph {
+    color: var(--white_color);
+    padding-bottom: .9375rem;
+}
+
+/* Div Promo_flash More*/
+
+/* Div Nav */
+
+.nav {
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.nav_icon_burguer {
+    margin-left: 1rem;
+    margin-right: 6rem;
+    width: 2.5rem;
+}
+
+.nav_icon_basket {
+    margin-left: 6.5625rem;
+}
+
+/* Div Nav End */
+
+/* Burguer Menu */
+
+.burguer_menu {
+    background-color: var(--white_color);
+    left: -23.75rem;
+    top: 1.875rem;
+    transition: 1.5s;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.burguer_menu_header {
+    align-items: center;
+    display: flex;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+}
+
+.burguer_menu_input_search {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.burguer_menu_input {
+    align-items: center;
+    border: .0625rem solid var(--gray_color);
+    border-radius: 1rem;
+    display: flex;
+    padding: .1875rem;
+}
+
+.burguer_menu_search:focus {
+    outline: 0;
+}
+
+.burguer_menu_input::after {
+    content: "";
+    display: inline-block;
+    background-image: url("/images/icons/icon_search.png");
+    background-size: 100%;
+    height: .9375rem;
+    margin-right: .375rem;
+    width: .9375rem;
+}
+
+.burguer_menu_search {
+    width: 6.25rem;
+}
+
+.burguer_menu_options {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.burguer_menu_options_link_sale {
+    margin: 1rem 0;
+}
+
+.burguer_menu_options_link {
+    padding: 1rem;
+}
+
+
+/* Burguer Menu End */
+
+/* Div Carousel_abaut*/
+
+.carousel_abaut {
+    align-items: center;
+    background-color: #BDBDBD;
+    display: flex;
+    height: 3.125rem;
+    margin-top: 1.875rem;
+    position: relative;
+    justify-content: center;
+}
+
+.carousel_abaut_icon_preview {
+    position: absolute;
+    left: 2rem;
+    height: 1.25rem;
+    width: .5625rem;
+}
+
+.carousel_abaut_content {
+    align-items: center;
+    display: flex;
+}
+
+.carousel_abaut_content_tittle {
+    padding: 0 .375rem;
+    font-weight: bold;
+}
+
+.carousel_abaut_content_paragraph {
+    font-size: .8125rem;
+    text-decoration: underline;
+}
+
+.carousel_abaut_icon_next {
+    position: absolute;
+    right: 2rem;
+    height: 1.25rem;
+    width: .5625rem;
+}
+
+/* Div Carousel_abaut End*/
+
+/* Div Carousel_abaut Slide */
+
+.carousel_abaut_content_slide {
+    animation-name: anime;
+    animation-duration: 2s;
+    display: none;
+    position: absolute;
+}
+
+.carousel_abaut_content_slide.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes anime {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Div Carousel_abaut Slide End */

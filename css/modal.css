@@ -1,0 +1,151 @@
+/* Modal */
+
+
+/* Box Modal Flash */
+.promo_flash_card_modal {
+    align-items: center;
+    background-color: var(--white_color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 26.625rem;
+    position: absolute;
+    transition: 1s;
+    width: 18.125rem;
+}
+/* Box Modal Flash End */
+
+/* Box Modal New */
+.new_product_modal {
+    align-items: center;
+    background-color: var(--white_color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: 1s;
+    width: 18.125rem;
+}
+/* Box Modal New End */
+
+
+#promo_flash_card_modal_1, #new_product_modal_1, #more_new_product_modal_1 { 
+    left: -21.875rem;
+}
+
+#promo_flash_card_modal_2, #new_product_modal_2, #more_new_product_modal_2 {
+    left: -21.875rem;
+}
+
+#promo_flash_card_modal_3, #new_product_modal_3, #more_new_product_modal_3 {
+    left: -21.875rem;
+}
+
+#promo_flash_card_modal_4 {
+    left: -21.875rem;
+}
+
+.promo_flash_card_modal_iconClose, .new_product_modal_iconClose {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.promo_flash_card_modal_product, .new_product_card_modal {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.promo_flash_card_modal_product_tennis {
+    rotate: -24deg;
+    width: 15.625rem;
+}
+
+.promo_flash_card_modal_availableSizes, .new_product_modal_availableSizes {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.promo_flash_card_modal_availableSizes_tittle, .new_modal_availableSizes_tittle {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.promo_flash_card_modal_sizes, .new_card_modal_sizes {
+    margin-bottom: 2rem;
+}
+
+.promo_flash_card_modal_sizes_list, .new_card_modal_sizes_list {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.promo_flash_card_modal_sizes_list_li, .new_card_modal_sizes_list_li {
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--black_color);
+    display: flex;
+    cursor: pointer;
+    height: 1.875rem;
+    justify-content: center;
+    margin: 0 0.2rem;
+    width: 3.125rem;
+}
+
+.promo_flash_card_modal_sizes_list_radio, .new_card_modal_sizes_list_radio {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    z-index: -1;
+}
+
+.promo_flash_card_modal_sizes_list_label, .new_card_modal_sizes_list_label {
+    color: var(--white_color);
+}
+
+.promo_flash_card_modal_sizes_list_radio:checked+.promo_flash_card_modal_sizes_list_label,
+.new_card_modal_sizes_list_radio:checked+
+.new_card_modal_sizes_list_label {
+    align-items: center;
+    border: 1px solid var(--orange_color);
+    border-radius: 12px;
+    background-color: var(--orange_color);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+#new_product_modal_product_tennis {
+    rotate: 24deg;
+}
+
+.promo_flash_card_modal_price, .new_product_modal_price {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Button Buy Flash */
+.promo_flash_card_modal_btnBuy {
+    background-color: var(--green_color);
+    border-radius: 1rem;
+    color: var(--white_color);
+    padding: 0.5rem 0;
+    width: 6rem;
+}
+/* Button Buy Flash End */
+
+/* Button Buy New */
+.new_product_btnBuy {
+    background-color: var(--green_color);
+    border-radius: 1rem;
+    color: var(--white_color);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    width: 6rem;
+}
+/* Button Buy New End */
+
+/* Modal End*/
