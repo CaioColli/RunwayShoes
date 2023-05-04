@@ -39,6 +39,11 @@ header {
     position: absolute;
     top: 30px;
     text-align: center;
+    width: 100%;
+}
+
+.promo_flash_abaut_content {
+    padding: 0 2rem;
 }
 
 .promo_flash_abaut_tittle {
@@ -257,5 +262,39 @@ header {
 
     .nav_icon_basket {
         margin: 0;
+    }
+
+    .nav_list_input {
+        align-items: center;
+        border: .0625rem solid var(--gray_color);
+        border-radius: 1rem;
+        display: flex;
+        padding: .1875rem;
+        margin: 1rem auto;
+        width: 15.625rem;
+    }
+
+    .nav_list_search {
+        background-color: transparent;
+        width: 15rem;
+    }
+    
+    .nav_list_search:focus {
+        outline: 0;
+    }
+    
+    .nav_list_input::after {
+        content: "";
+        display: inline-block;
+        background-image: url("/images/icons/icon_search.png");
+        background-size: 100%;
+        height: .9375rem;
+        margin-right: .375rem;
+        width: .9375rem;
+    }
+    
+    /*  */
+    .carousel_abaut {
+        margin-top: 0;
     }
 }

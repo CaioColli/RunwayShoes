@@ -31,13 +31,13 @@ btnBurguer.addEventListener('click', function () {
 })
 
 btnExitBurguer.addEventListener('click', function () {
-    sideMenu.style.left = '-100px'
-    sideMenu.style.transform = 'translateX(-23.75rem)'
+    sideMenu.style.left = '-28.125rem'
+    sideMenu.style.transform = 'translateX(-28.125rem)'
 })
 
 document.addEventListener('click', function (event) {
     if (!sideMenu.contains(event.target) && !btnBurguer.contains(event.target)) {
-        sideMenu.style.left = '-23.75rem';
+        sideMenu.style.left = '-28.125rem';
     }
 })
 
