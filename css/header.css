@@ -72,6 +72,14 @@ header {
     width: 2.5rem;
 }
 
+.nav_list {
+    display: none;
+}
+
+.nav_list_iconProfile {
+    display: none;
+}
+
 .nav_icon_basket {
     margin-left: 6.5625rem;
 }
@@ -82,7 +90,7 @@ header {
 
 .burguer_menu {
     background-color: var(--white_color);
-    left: -23.75rem;
+    left: -28.125rem;
     top: 1.875rem;
     transition: 1.5s;
     position: absolute;
@@ -216,3 +224,38 @@ header {
 }
 
 /* Div Carousel_abaut Slide End */
+
+@media screen and (min-width: 700px) {
+    /* Display None */
+    .nav_icon_burguer {
+        display: none;
+    }
+
+    .burguer_menu {
+        display: none;
+    }
+    /* Display None End */
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    
+    .nav_list {
+        display: inline-block;
+        display: flex;
+    }
+
+    .nav_list_item {
+        padding: 1rem;
+    }
+
+    .nav_list_iconProfile {
+        display: inline-block;
+    }
+
+    .nav_icon_basket {
+        margin: 0;
+    }
+}

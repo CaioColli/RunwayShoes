@@ -1,8 +1,11 @@
-@import url('header.css');
-@import url('promo_flash.css');
-@import url('news.css');
+@import url('header.css'); /**/
+@import url('promo_flash.css'); /**/
+@import url('news.css'); /**/
+@import url('sports.css'); /**/
+@import url('collections.css'); /**/
+@import url('end_page.css'); /**/
 
-@import url('modal.css');
+@import url('modal.css'); /**/
 
 :root {
     --orange_color: #DC7413;
@@ -18,4 +21,10 @@ body {
     src: url("fonts/helvetica.ttf");
     background-color: #E4E4E4;
     font-size: .875rem;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        font-size: 1rem;
+    }
 }

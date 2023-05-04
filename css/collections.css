@@ -1,0 +1,80 @@
+.collections {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collections_tittle {
+    color: var(--orange_color);
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+
+.colections_photos {
+    display: flex;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.colections_img {
+    width: 11.25rem;
+}
+
+.collections_img_tittle {
+    align-items: center;
+    color: var(--white_color);
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: bold;
+    position: absolute;
+    text-shadow: .0625rem .0625rem var(--black_color);
+    margin-top: 40%;
+    margin-left: 15%;
+}
+
+.collections_img_tittle_man {
+    align-items: center;
+    color: var(--white_color);
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    text-shadow: .0625rem .0625rem var(--black_color);
+    margin-top: 40%;
+    margin-left: 8%;
+}
+
+.collections_icon_tittle {
+    margin: 0 .625rem;
+    width: 2.5rem;
+}
+
+.collections_content {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.collections_content_tittle {
+    font-weight: bold;
+}
+
+.collections_content_tittle_orange {
+    color: var(--orange_color);
+    display: block;
+}
+
+.collections_content_paragraph {
+    margin: 1rem 0;
+}
+
+.collections_btn {
+    background-color: var(--black_color);
+    border-radius: 1rem;
+    color: var(--white_color);
+    font-weight: bold;
+    height: 2.1875rem;
+    padding: 0.5rem 0;
+    width: 6rem;
+}
