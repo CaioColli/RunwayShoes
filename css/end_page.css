@@ -111,3 +111,40 @@
     font-size: .75rem;
     padding: 1rem;
 }
+
+@media screen and (min-width: 700px) {
+    .end_page_email_box {
+        width: 31.25rem;
+        text-align: center;
+    }
+
+    .end_page_email_inputEmail {
+        width: 18.75rem;
+    }
+
+    .end_page_email_input_SubmiteEmail {
+        width: 7.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+       .end_page_tittle {
+        font-size: 1.5rem;
+       }
+
+       .end_page_tittle_abaut {
+        font-size: 1.2rem;
+       }
+
+       .end_page_email_box {
+        width: 56.25rem;
+       }
+
+       .end_page_email_inputEmail {
+        width: 31.25rem;
+       }
+
+       .end_page_copyright_tittle {
+        font-size: 1rem;
+       }
+}

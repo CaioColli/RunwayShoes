@@ -78,3 +78,34 @@
     padding: 0.5rem 0;
     width: 6rem;
 }
+
+@media screen and (min-width: 700px) {
+    .collections_tittle {
+        font-size: 1.5rem;
+    }
+
+    .colections_img {
+        width: 350px;
+    }
+
+    .collections_img_tittle, .collections_img_tittle_man {
+        font-size: 2rem;
+        margin-left: 15%;
+    }
+
+    .collections_icon_tittle {
+        width: 4rem;
+    }
+
+    .collections_content_tittle {
+        font-size: 1.5rem;
+    }
+
+    .collections_content_paragraph {
+        font-size: 1rem;
+    }
+
+    .collections_btn {
+        width: 12rem;
+    }
+}

@@ -15,9 +15,13 @@
 <body>
     <header>
         <div class="promo_flash">
-            <img src="images/icons/icon_ray.png" alt="" class="flash_promo_icon_ray">
-            <p class="flash_promo_paragraph">Promo Flash</p>
-            <img src="images/icons/icon_ray.png" alt="" class="flash_promo_icon_ray">
+            <div class="promo_flash_content">
+                <div class="promo_flash_content_paragraph">
+                    <img src="images/icons/icon_ray.png" alt="" class="flash_promo_icon_ray">
+                    <p class="flash_promo_paragraph">Promo Flash</p>
+                    <img src="images/icons/icon_ray.png" alt="" class="flash_promo_icon_ray">
+                </div>
+            </div>
             <img src="images/icons/icon_arrow_down.png" alt="" class="flash_promo_icon_arrow_down">
             <img src="images/icons/icon_arrow_up.png" alt="" class="flash_promo_icon_arrow_up">
 
@@ -26,7 +30,8 @@
                 <div class="promo_flash_abaut_content">
                     <h2 class="promo_flash_abaut_tittle">O que é <strong class="promo_flash_abaut_tittle_strong">“Promo
                             Flash”</strong>?</h2>
-                    <p class="promo_flash_abaut_paragraph">É uma oferta limitada de tempo que dura apenas um dia após ser
+                    <p class="promo_flash_abaut_paragraph">É uma oferta limitada de tempo que dura apenas um dia após
+                        ser
                         anunciado no site.</p>
                 </div>
             </div>
@@ -40,17 +45,32 @@
 
             <!-- Nav Tablet && Desktop -->
             <ul class="nav_list">
-                <li class="nav_list_item">Promoções</li>
-                <li class="nav_list_item">Novidades</li>
-                <li class="nav_list_item">Esportes</li>
-                <li class="nav_list_item">Homem</li>
-                <li class="nav_list_item">Mulher</li>
+                <a href="">
+                    <li class="nav_list_item">Promoções</li>
+                </a>
+                <a href="">
+                    <li class="nav_list_item">Novidades</li>
+                </a>
+                <a href="">
+                    <li class="nav_list_item">Esportes</li>
+                </a>
+                <a href="">
+                    <li class="nav_list_item">Homem</li>
+                </a>
+                <a href="">
+                    <li class="nav_list_item">Mulher</li>
+                </a>
             </ul>
-
-            <img src="images/icons/icon_login.png" alt="" class="nav_list_iconProfile">
-            <!-- Nav Tablet && Desktop End -->
-
-            <img src="images/icons/icon_basket.png" alt="" class="nav_icon_basket">
+            <div class="nav_inputAndIcons_tabletAndDesk">
+                <img src="images/icons/icon_login.png" alt="" class="nav_list_iconProfile">
+    
+                <div class="nav_list_input_desktop">
+                    <input type="text" placeholder="Buscar" class="nav_list_search_desktop">
+                </div>
+                <!-- Nav Tablet && Desktop End -->
+    
+                <img src="images/icons/icon_basket.png" alt="" class="nav_icon_basket">
+            </div>
         </div>
         <!-- Nav End -->
 
@@ -131,16 +151,16 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="4000">
-                    <img src="images/carousel/carousel_1.png" alt=""></img>
+                    <img src="images/carousel/carousel_1.png" alt="" class="carousel_images"></img>
                 </div>
                 <div class="carousel-item" data-bs-interval="4000">
-                    <img src="images/carousel/carousel_2.png" alt=""></img>
+                    <img src="images/carousel/carousel_2.png" alt="" class="carousel_images"></img>
                 </div>
                 <div class="carousel-item" data-bs-interval="4000">
-                    <img src="images/carousel/carousel_3.png" alt=""></img>
+                    <img src="images/carousel/carousel_3.png" alt="" class="carousel_images"></img>
                 </div>
                 <div class="carousel-item" data-bs-interval="4000">
-                    <img src="images/carousel/carousel_4.png" alt=""></img>
+                    <img src="images/carousel/carousel_4.png" alt="" class="carousel_images"></img>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -163,12 +183,12 @@
     <section class="section_promo_flash">
 
         <div class="promo_flash_header">
-            <img src="images/icons/icon_ray.png" alt="">
+            <img src="images/icons/icon_ray.png" alt="" class="promo_flash_icon">
             <h2 class="promo_flash_tittle">Promo Flash</h2>
-            <img src="images/icons/icon_ray.png" alt="">
+            <img src="images/icons/icon_ray.png" alt="" class="promo_flash_icon">
         </div>
 
-        <div class="">
+        <div class="promo_flash_displayTabletDesk">
             <div class="promo_flash_card">
                 <div class="promo_flash_card_content">
                     <img src="images/products/shoes_1.png" alt="" class="promo_flash_card_img">
@@ -177,7 +197,7 @@
                         <p class="promo_flash_card_oldPrice">R$ 399,99</p>
                         <p class="promo_flash_card_newPrice">R$ 299,99</p>
 
-                        <button class="promo_flash_card_btnBuy_paragraph" id="promo_flash_card_btnBuy_paragraph_1">
+                        <button class="buttonBuy" id="promo_flash_card_btnBuy_paragraph_1">
                             Comprar</button>
                     </div>
                 </div>
@@ -231,7 +251,7 @@
                     <p>R$ 299,99</p>
                 </div>
 
-                <button class="promo_flash_card_modal_btnBuy" id="promo_flash_card_modal_btnBuy_1">Comprar</button>
+                <button class="buttonBuy" id="promo_flash_card_modal_btnBuy_1">Comprar</button>
             </div>
 
             <!-- Modal 1 End-->
@@ -244,7 +264,7 @@
                         <p class="promo_flash_card_oldPrice">R$ 1099,99</p>
                         <p class="promo_flash_card_newPrice">R$ 940,00</p>
 
-                        <button class="promo_flash_card_btnBuy_paragraph" id="promo_flash_card_btnBuy_paragraph_2">
+                        <button class="buttonBuy" id="promo_flash_card_btnBuy_paragraph_2">
                             Comprar</button>
                     </div>
                 </div>
@@ -298,7 +318,7 @@
                     <p>R$ 940,00</p>
                 </div>
 
-                <button class="promo_flash_card_modal_btnBuy" id="promo_flash_card_modal_btnBuy_2">Comprar</button>
+                <button class="buttonBuy" id="promo_flash_card_modal_btnBuy_2">Comprar</button>
             </div>
 
             <!-- Modal End 2 -->
@@ -311,7 +331,7 @@
                         <p class="promo_flash_card_oldPrice">R$ 1099,99</p>
                         <p class="promo_flash_card_newPrice">R$ 900,00</p>
 
-                        <button class="promo_flash_card_btnBuy_paragraph" id="promo_flash_card_btnBuy_paragraph_3">
+                        <button class="buttonBuy" id="promo_flash_card_btnBuy_paragraph_3">
                             Comprar</button>
                     </div>
                 </div>
@@ -365,7 +385,7 @@
                     <p>R$ 900,00</p>
                 </div>
 
-                <button class="promo_flash_card_modal_btnBuy" id="promo_flash_card_modal_btnBuy_3">Comprar</button>
+                <button class="buttonBuy" id="promo_flash_card_modal_btnBuy_3">Comprar</button>
             </div>
 
             <!-- Modal End 3 -->
@@ -378,7 +398,7 @@
                         <p class="promo_flash_card_oldPrice">R$ 1899,99</p>
                         <p class="promo_flash_card_newPrice">R$ 1750,50</p>
 
-                        <button class="promo_flash_card_btnBuy_paragraph" id="promo_flash_card_btnBuy_paragraph_4">
+                        <button class="buttonBuy" id="promo_flash_card_btnBuy_paragraph_4">
                             Comprar</button>
                     </div>
                 </div>
@@ -433,7 +453,7 @@
                 <p>R$ 1750,50</p>
             </div>
 
-            <button class="promo_flash_card_modal_btnBuy" id="promo_flash_card_modal_btnBuy_4">Comprar</button>
+            <button class="buttonBuy" id="promo_flash_card_modal_btnBuy_4">Comprar</button>
         </div>
         <!-- Modal 4 End -->
     </section>
@@ -456,7 +476,7 @@
                     <p class="new_product_content_tittleProduct">Regata NBA Los Angeles Lakers</p>
                     <div class="new_product_content_price">
                         <p class="new_product_content_priceProduct">R$ 599,99</p>
-                        <button class="new_product_content_btn_buyProduct"
+                        <button class="buttonBuy"
                             id="new_product_content_btn_buyProduct_1">Comprar</button>
                     </div>
                 </div>
@@ -475,7 +495,7 @@
                     <p>R$ 599,99</p>
                 </div>
 
-                <button class="new_product_btnBuy" id="new_card__btnBuy_1">Comprar</button>
+                <button class="buttonBuy" id="new_card__btnBuy_1">Comprar</button>
             </div>
             <!-- Modal 1 End -->
 
@@ -485,7 +505,7 @@
                     <p class="new_product_content_tittleProduct">Regata NBA Dallas</p>
                     <div class="new_product_content_price">
                         <p class="new_product_content_priceProduct">R$ 599,99</p>
-                        <button class="new_product_content_btn_buyProduct"
+                        <button class="buttonBuy"
                             id="new_product_content_btn_buyProduct_2">Comprar</button>
                     </div>
                 </div>
@@ -504,7 +524,7 @@
                     <p>R$ 599,99</p>
                 </div>
 
-                <button class="new_product_btnBuy" id="new_card__btnBuy_2">Comprar</button>
+                <button class="buttonBuy" id="new_card__btnBuy_2">Comprar</button>
             </div>
             <!-- Modal 2 End -->
 
@@ -514,7 +534,7 @@
                     <p class="new_product_content_tittleProduct">Regata NBA Philadelphia</p>
                     <div class="new_product_content_price">
                         <p class="new_product_content_priceProduct">R$ 599,99</p>
-                        <button class="new_product_content_btn_buyProduct"
+                        <button class="buttonBuy"
                             id="new_product_content_btn_buyProduct_3">Comprar</button>
                     </div>
                 </div>
@@ -533,7 +553,7 @@
                     <p>R$ 599,99</p>
                 </div>
 
-                <button class="new_product_btnBuy" id="new_card__btnBuy_3">Comprar</button>
+                <button class="buttonBuy" id="new_card__btnBuy_3">Comprar</button>
             </div>
             <!-- Modal 3 End -->
 
@@ -548,7 +568,7 @@
                             Angeles Lakers 7</p>
                         <div class="new_product_content_price">
                             <p class="new_product_content_priceProduct">R$ 160,00</p>
-                            <button class="new_product_content_btn_buyProduct"
+                            <button class="buttonBuy"
                                 id="more_new_product_content_btn_buyProduct_1">Comprar</button>
                         </div>
                     </div>
@@ -568,7 +588,7 @@
                         <p>R$ 160,00</p>
                     </div>
 
-                    <button class="new_product_btnBuy" id="more_new_card__btnBuy_1">Comprar</button>
+                    <button class="buttonBuy" id="more_new_card__btnBuy_1">Comprar</button>
                 </div>
 
                 <!-- Modal 1 End-->
@@ -580,7 +600,7 @@
                             Series</p>
                         <div class="new_product_content_price">
                             <p class="new_product_content_priceProduct">R$ 150,90</p>
-                            <button class="new_product_content_btn_buyProduct"
+                            <button class="buttonBuy"
                                 id="more_new_product_content_btn_buyProduct_2">Comprar</button>
                         </div>
                     </div>
@@ -600,7 +620,7 @@
                         <p>R$ 150,90</p>
                     </div>
 
-                    <button class="new_product_btnBuy" id="more_new_card__btnBuy_2">Comprar</button>
+                    <button class="buttonBuy" id="more_new_card__btnBuy_2">Comprar</button>
                 </div>
 
                 <!-- Modal 2 End -->
@@ -611,7 +631,7 @@
                         <p class="new_product_content_tittleProduct">Tênis Adidas forum exhibit low</p>
                         <div class="new_product_content_price">
                             <p class="new_product_content_priceProduct">R$ 699,99</p>
-                            <button class="new_product_content_btn_buyProduct"
+                            <button class="buttonBuy"
                                 id="more_new_product_content_btn_buyProduct_3">Comprar</button>
                         </div>
                     </div>
@@ -667,7 +687,7 @@
                         <p>R$ 699,99</p>
                     </div>
 
-                    <button class="new_product_btnBuy" id="more_new_card__btnBuy_3">Comprar</button>
+                    <button class="buttonBuy" id="more_new_card__btnBuy_3">Comprar</button>
                 </div>
 
                 <!-- Modal 3 End -->
@@ -675,6 +695,54 @@
                 <button class="new_products_btn_seeLess" id="new_products_btn_seeLess_newProducts">Ver menos</button>
             </div>
         </div>
+
+
+        <div class="new_products_tabletAndDesk">
+            <div class="new_products_tabletAndDesk_contents">
+                <div class="new_product">
+                    <div class="new_product_img">
+                        <img src="images/products/basketball_1.png" alt="">
+                    </div>
+                    <div class="new_product_content">
+                        <p class="new_product_content_tittleProduct">Bolas de basquete NBA Team Tiedye Los
+                            Angeles Lakers 7</p>
+                        <div class="new_product_content_price">
+                            <p class="new_product_content_priceProduct">R$ 160,00</p>
+                            <button class="buttonBuy"
+                                id="more_new_product_content_btn_buyProduct_1">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_product">
+                    <div class="new_product_img">
+                        <img src="images/products/basketball_2.png" alt="">
+                    </div>
+                    <div class="new_product_content">
+                        <p class="new_product_content_tittleProduct">Bolas de basquete Wilson NBA DRV
+                            Series</p>
+                        <div class="new_product_content_price">
+                            <p class="new_product_content_priceProduct">R$ 150,90</p>
+                            <button class="buttonBuy"
+                                id="more_new_product_content_btn_buyProduct_2">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="new_product">
+                    <div class="new_product_img">
+                        <img src="images/products/shoes_5.png" alt="">
+                    </div>
+                    <div class="new_product_content" id="new_product_content">
+                        <p class="new_product_content_tittleProduct">Tênis Adidas forum exhibit low</p>
+                        <div class="new_product_content_price">
+                            <p class="new_product_content_priceProduct">R$ 699,99</p>
+                            <button class="buttonBuy"
+                                id="more_new_product_content_btn_buyProduct_3">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Div More Products End -->
     </section>
 
@@ -685,189 +753,228 @@
     <section class="section_sports">
         <div class="sports_header">
             <img src="images/icons/icon_ball_sport.png" alt="" class="sports_header_icon">
-            <h2 class="sports_tittle">Novidades</h2>
+            <h2 class="sports_tittle">Esportes</h2>
         </div>
 
         <div class="sports_products">
-            <div class="sports_product">
-                <img src="images/products/bottle.png" alt="" class="sports_product_img">
-                <div class="sports_product_content">
-                    <p class="sports_product_content_tittleProduct">Garrafa de treino core</p>
-                    <div class="sports_product_content_price">
-                        <p class="sports_product_content_priceProduct">R$ 59,99</p>
-                        <button class="new_product_content_btn_buyProduct"
-                            id="sports_product_content_btn_buyProduct_1">Comprar</button>
+            <div class="sports_products_tabletAndDesk">
+                <div class="sports_product">
+                    <img src="images/products/bottle.png" alt="" class="sports_product_img">
+                    <div class="sports_product_content">
+                        <p class="sports_product_content_tittleProduct">Garrafa de treino core</p>
+                        <div class="sports_product_content_price">
+                            <p class="sports_product_content_priceProduct">R$ 59,99</p>
+                            <button class="buttonBuy"
+                                id="sports_product_content_btn_buyProduct_1">Comprar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Modal 1 -->
-            <div class="sports_product_modal" id="sports_product_modal_1">
-                <div class="sports_product_modal_div_close">
-                    <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
-                        id="sports_product_modal_iconClose_1">
-                </div>
-                <div class="sports_product_card_modal">
-                    <img src="images/products/bottle.png" alt="" class="sports_product_modal_product">
-                </div>
-                <div class="sports_product_modal_price">
-                    <p>R$ 59,99</p>
-                </div>
+                <!-- Modal 1 -->
+                <div class="sports_product_modal" id="sports_product_modal_1">
+                    <div class="sports_product_modal_div_close">
+                        <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
+                            id="sports_product_modal_iconClose_1">
+                    </div>
+                    <div class="sports_product_card_modal">
+                        <img src="images/products/bottle.png" alt="" class="sports_product_modal_product">
+                    </div>
+                    <div class="sports_product_modal_price">
+                        <p>R$ 59,99</p>
+                    </div>
 
-                <button class="sports_product_btnBuy" id="sports_card__btnBuy_1">Comprar</button>
-            </div>
-            <!-- Modal 1 End -->
+                    <button class="buttonBuy" id="sports_card__btnBuy_1">Comprar</button>
+                </div>
+                <!-- Modal 1 End -->
 
-            <div class="sports_product">
-                <img src="images/products/bag_1.png" alt="" class="sports_product_img">
-                <div class="sports_product_content">
-                    <p class="sports_product_content_tittleProduct">Sacola Adidas Power GymSack</p>
-                    <div class="sports_product_content_price">
-                        <p class="sports_product_content_priceProduct">R$ 75,90</p>
-                        <button class="new_product_content_btn_buyProduct"
-                            id="sports_product_content_btn_buyProduct_2">Comprar</button>
+                <div class="sports_product">
+                    <img src="images/products/bag_1.png" alt="" class="sports_product_img">
+                    <div class="sports_product_content">
+                        <p class="sports_product_content_tittleProduct">Sacola Adidas Power GymSack</p>
+                        <div class="sports_product_content_price">
+                            <p class="sports_product_content_priceProduct">R$ 75,90</p>
+                            <button class="buttonBuy"
+                                id="sports_product_content_btn_buyProduct_2">Comprar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Modal 2 -->
-            <div class="sports_product_modal" id="sports_product_modal_2">
-                <div class="sports_product_modal_div_close">
-                    <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
-                        id="sports_product_modal_iconClose_2">
-                </div>
-                <div class="sports_product_card_modal">
-                    <img src="images/products/bag_1.png" alt="" class="sports_product_modal_product">
-                </div>
-                <div class="sports_product_modal_price">
-                    <p>R$ 75,90</p>
-                </div>
+                <!-- Modal 2 -->
+                <div class="sports_product_modal" id="sports_product_modal_2">
+                    <div class="sports_product_modal_div_close">
+                        <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
+                            id="sports_product_modal_iconClose_2">
+                    </div>
+                    <div class="sports_product_card_modal">
+                        <img src="images/products/bag_1.png" alt="" class="sports_product_modal_product">
+                    </div>
+                    <div class="sports_product_modal_price">
+                        <p>R$ 75,90</p>
+                    </div>
 
-                <button class="sports_product_btnBuy" id="sports_card__btnBuy_2">Comprar</button>
-            </div>
-            <!-- Modal 2 End -->
+                    <button class="buttonBuy" id="sports_card__btnBuy_2">Comprar</button>
+                </div>
+                <!-- Modal 2 End -->
 
-            <div class="sports_product">
-                <img src="images/products/bag_2.png" alt="" class="sports_product_img">
-                <div class="sports_product_content">
-                    <p class="sports_product_content_tittleProduct">Sacola Nike Heritage Unissex</p>
-                    <div class="sports_product_content_price">
-                        <p class="sports_product_content_priceProduct">R$ 170,00</p>
-                        <button class="sports_product_content_btn_buyProduct"
-                            id="sports_product_content_btn_buyProduct_3">Comprar</button>
+                <div class="sports_product">
+                    <img src="images/products/bag_2.png" alt="" class="sports_product_img">
+                    <div class="sports_product_content">
+                        <p class="sports_product_content_tittleProduct">Sacola Nike Heritage Unissex</p>
+                        <div class="sports_product_content_price">
+                            <p class="sports_product_content_priceProduct">R$ 170,00</p>
+                            <button class="buttonBuy"
+                                id="sports_product_content_btn_buyProduct_3">Comprar</button>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Modal 3 -->
+                <div class="sports_product_modal" id="sports_product_modal_3">
+                    <div class="sports_product_modal_div_close">
+                        <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
+                            id="sports_product_modal_iconClose_3">
+                    </div>
+                    <div class="sports_product_card_modal">
+                        <img src="images/products/bag_2.png" alt="" class="sports_product_modal_product">
+                    </div>
+                    <div class="sports_product_modal_price">
+                        <p>R$ 170,00</p>
+                    </div>
+
+                    <button class="buttonBuy" id="sports_card__btnBuy_3">Comprar</button>
+                </div>
+                <!-- Modal 3 End -->
+
+                <button class="sports_products_btn_showMore" id="sports_products_btn_showMore">Ver mais</button>
+
+                <!-- Div More Products -->
+                <div class="sports_products_showMore" id="sports_products_showMore">
+                    <div class="sports_product">
+                        <img src="images/products/basket.png" alt="" class="sports_product_img">
+                        <div class="sports_product_content">
+                            <p class="sports_product_content_tittleProduct">Aro de Basquete</p>
+                            <div class="sports_product_content_price">
+                                <p class="sports_product_content_priceProduct">R$ 229,90</p>
+                                <button class="buttonBuy"
+                                    id="more_sports_product_content_btn_buyProduct_1">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 1 -->
+                    <div class="sports_product_modal" id="more_sports_product_modal_1">
+                        <div class="sports_product_modal_div_close">
+                            <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
+                                id="more_sports_product_modal_iconClose_1">
+                        </div>
+                        <div class="sports_product_card_modal">
+                            <img src="images/products/basket.png" alt="" class="sports_product_modal_product">
+                        </div>
+                        <div class="sports_product_modal_price">
+                            <p>R$ 229,90</p>
+                        </div>
+
+                        <button class="sports_product_btnBuy" id="more_sports_card__btnBuy_1">Comprar</button>
+                    </div>
+                    <!-- Modal 1 End-->
+
+                    <div class="sports_product">
+                        <img src="images/products/volleyball_net.png" alt="" class="sports_product_img">
+                        <div class="sports_product_content">
+                            <p class="sports_product_content_tittleProduct">Rede de vôlei 5 metros</p>
+                            <div class="sports_product_content_price">
+                                <p class="sports_product_content_priceProduct">R$ 70,00</p>
+                                <button class="buttonBuy"
+                                    id="more_sports_product_content_btn_buyProduct_2">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 2 -->
+                    <div class="sports_product_modal" id="more_sports_product_modal_2">
+                        <div class="sports_product_modal_div_close">
+                            <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
+                                id="more_sports_product_modal_iconClose_2">
+                        </div>
+                        <div class="sports_product_card_modal">
+                            <img src="images/products/volleyball_net.png" alt="" class="sports_product_modal_product">
+                        </div>
+                        <div class="sports_product_modal_price">
+                            <p>R$ 70,00</p>
+                        </div>
+
+                        <button class="sports_product_btnBuy" id="more_sports_card__btnBuy_2">Comprar</button>
+                    </div>
+                    <!-- Modal 2 End-->
+
+                    <div class="sports_product">
+                        <img src="images/products/volleyball.png" alt="" class="sports_product_img">
+                        <div class="sports_product_content">
+                            <p class="sports_product_content_tittleProduct">Bola de Vôlei Penalty MG 3600</p>
+                            <div class="sports_product_content_price">
+                                <p class="sports_product_content_priceProduct">R$ 120,90</p>
+                                <button class="buttonBuy"
+                                    id="more_sports_product_content_btn_buyProduct_3">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 3 -->
+                    <div class="sports_product_modal" id="more_sports_product_modal_3">
+                        <div class="sports_product_modal_div_close">
+                            <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
+                                id="more_sports_product_modal_iconClose_3">
+                        </div>
+                        <div class="sports_product_card_modal">
+                            <img src="images/products/volleyball.png" alt="" class="sports_product_modal_product">
+                        </div>
+                        <div class="sports_product_modal_price">
+                            <p>R$ 120,90</p>
+                        </div>
+
+                        <button class="sports_product_btnBuy" id="more_sports_card__btnBuy_3">Comprar</button>
+                    </div>
+                    <!-- Modal 3 End-->
+
+                    <button class="new_products_btn_seeLess" id="sports_products_btn_seeLess_newProducts">Ver
+                        menos</button>
+                </div>
             </div>
 
-            <!-- Modal 3 -->
-            <div class="sports_product_modal" id="sports_product_modal_3">
-                <div class="sports_product_modal_div_close">
-                    <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
-                        id="sports_product_modal_iconClose_3">
-                </div>
-                <div class="sports_product_card_modal">
-                    <img src="images/products/bag_2.png" alt="" class="sports_product_modal_product">
-                </div>
-                <div class="sports_product_modal_price">
-                    <p>R$ 170,00</p>
-                </div>
-
-                <button class="sports_product_btnBuy" id="sports_card__btnBuy_3">Comprar</button>
-            </div>
-            <!-- Modal 3 End -->
-
-            <button class="sports_products_btn_showMore" id="sports_products_btn_showMore">Ver mais</button>
-
-            <!-- Div More Products -->
-            <div class="sports_products_showMore" id="sports_products_showMore">
+            <div class="sports_tabletAndDesk">
                 <div class="sports_product">
                     <img src="images/products/basket.png" alt="" class="sports_product_img">
                     <div class="sports_product_content">
                         <p class="sports_product_content_tittleProduct">Aro de Basquete</p>
                         <div class="sports_product_content_price">
                             <p class="sports_product_content_priceProduct">R$ 229,90</p>
-                            <button class="sports_product_content_btn_buyProduct"
+                            <button class="buttonBuy"
                                 id="more_sports_product_content_btn_buyProduct_1">Comprar</button>
                         </div>
                     </div>
                 </div>
-
-                <!-- Modal 1 -->
-                <div class="sports_product_modal" id="more_sports_product_modal_1">
-                    <div class="sports_product_modal_div_close">
-                        <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
-                            id="more_sports_product_modal_iconClose_1">
-                    </div>
-                    <div class="sports_product_card_modal">
-                        <img src="images/products/basket.png" alt="" class="sports_product_modal_product">
-                    </div>
-                    <div class="sports_product_modal_price">
-                        <p>R$ 229,90</p>
-                    </div>
-
-                    <button class="sports_product_btnBuy" id="more_sports_card__btnBuy_1">Comprar</button>
-                </div>
-                <!-- Modal 1 End-->
-
                 <div class="sports_product">
                     <img src="images/products/volleyball_net.png" alt="" class="sports_product_img">
                     <div class="sports_product_content">
                         <p class="sports_product_content_tittleProduct">Rede de vôlei 5 metros</p>
                         <div class="sports_product_content_price">
                             <p class="sports_product_content_priceProduct">R$ 70,00</p>
-                            <button class="sports_product_content_btn_buyProduct"
+                            <button class="buttonBuy"
                                 id="more_sports_product_content_btn_buyProduct_2">Comprar</button>
                         </div>
                     </div>
                 </div>
-
-                <!-- Modal 2 -->
-                <div class="sports_product_modal" id="more_sports_product_modal_2">
-                    <div class="sports_product_modal_div_close">
-                        <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
-                            id="more_sports_product_modal_iconClose_2">
-                    </div>
-                    <div class="sports_product_card_modal">
-                        <img src="images/products/volleyball_net.png" alt="" class="sports_product_modal_product">
-                    </div>
-                    <div class="sports_product_modal_price">
-                        <p>R$ 70,00</p>
-                    </div>
-
-                    <button class="sports_product_btnBuy" id="more_sports_card__btnBuy_2">Comprar</button>
-                </div>
-                <!-- Modal 2 End-->
-
                 <div class="sports_product">
                     <img src="images/products/volleyball.png" alt="" class="sports_product_img">
                     <div class="sports_product_content">
                         <p class="sports_product_content_tittleProduct">Bola de Vôlei Penalty MG 3600</p>
                         <div class="sports_product_content_price">
                             <p class="sports_product_content_priceProduct">R$ 120,90</p>
-                            <button class="sports_product_content_btn_buyProduct"
+                            <button class="buttonBuy"
                                 id="more_sports_product_content_btn_buyProduct_3">Comprar</button>
                         </div>
                     </div>
                 </div>
-
-                <!-- Modal 3 -->
-                <div class="sports_product_modal" id="more_sports_product_modal_3">
-                    <div class="sports_product_modal_div_close">
-                        <img src="images/icons/icon_exit.png" alt="" class="sports_product_modal_iconClose"
-                            id="more_sports_product_modal_iconClose_3">
-                    </div>
-                    <div class="sports_product_card_modal">
-                        <img src="images/products/volleyball.png" alt="" class="sports_product_modal_product">
-                    </div>
-                    <div class="sports_product_modal_price">
-                        <p>R$ 120,90</p>
-                    </div>
-
-                    <button class="sports_product_btnBuy" id="more_sports_card__btnBuy_3">Comprar</button>
-                </div>
-                <!-- Modal 3 End-->
-
-                <button class="new_products_btn_seeLess" id="sports_products_btn_seeLess_newProducts">Ver menos</button>
             </div>
     </section>
 
@@ -937,16 +1044,16 @@
                     <div class="end_page_abaut">
                         <h2 class="end_page_tittle_abaut">LOJA SUSTENTAVEL</h2>
                         <p class="end_page_paragraph_abaut">Loja responsável, que respeita
-                        o meio ambiente </p>
+                            o meio ambiente </p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="end_page_email">
             <div class="end_page_email_box">
-                <p class="end_page_email_paragraph">Cadastre seu email para receber novidades, promoções 
-                exclusivas e receber 10% off na primeira compra!</p>
+                <p class="end_page_email_paragraph">Cadastre seu email para receber novidades, promoções
+                    exclusivas e receber 10% off na primeira compra!</p>
                 <form class="end_page_email_box_inputs">
                     <input type="email" name="" placeholder="Digite seu email" class="end_page_email_inputEmail">
                     <input type="submit" value="Enviar" class="end_page_email_input_SubmiteEmail">

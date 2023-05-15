@@ -8,8 +8,13 @@
 }
 
 .promo_flash_header {
+    align-items: center;
     display: flex;
     padding: 1rem 0;
+}
+
+.promo_flash_icon {
+    width: 1rem;
 }
 
 .promo_flash_tittle {
@@ -23,6 +28,7 @@
 
 .promo_flash_card {
     background-color: rgba(255, 255, 255, 0.5);
+    height: 13.4375rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
     width: 18.125rem;
@@ -32,6 +38,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .promo_flash_card_img {
@@ -46,7 +53,8 @@
 .promo_flash_card_price {
     align-items: center;
     display: flex;
-    margin-bottom: 1rem;
+    position: absolute;
+    margin-top: 10.9375rem;
 }
 
 .promo_flash_card_oldPrice {
@@ -63,11 +71,63 @@
     border-radius: 1rem;
 }
 
-.promo_flash_card_btnBuy_paragraph {
-    background-color: var(--green_color);
-    border-radius: 1rem;
-    color: var(--white_color);
-    padding: 0.5rem 1rem;
-}
 
 /* Div Promo_flash Card Dnd*/
+
+@media screen and (min-width: 700px) {
+    .promo_flash_displayTabletDesk {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .promo_flash_card {
+        margin: 0.5rem 0.5rem;
+        width: 18.75rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Display None */
+    #promo_flash_card_modal_1, #promo_flash_card_modal_2, #promo_flash_card_modal_3, #promo_flash_card_modal_4 {
+        display: none;
+    }
+    /* Display None End */
+
+    .promo_flash_header {
+        align-items: center;
+    }
+    
+    .promo_flash_icon {
+        width: 2rem;
+    }
+
+    .promo_flash_tittle {
+        font-size: 2rem;
+        padding: 0 2rem;
+    }
+
+    .promo_flash_displayTabletDesk {
+        padding: 2rem 0;
+    }
+
+    .promo_flash_card {
+        margin: 0 2.5rem;
+        height: 13.4375rem;
+    }
+
+    .promo_flash_card_content {
+        position: relative;
+    }
+
+    .promo_flash_card_price {
+        position: absolute;
+        margin-top: 10.9375rem;
+    }
+
+    #promo_flash_card_btnBuy_paragraph_1, #promo_flash_card_btnBuy_paragraph_2, #promo_flash_card_btnBuy_paragraph_3, #promo_flash_card_btnBuy_paragraph_4 {
+        cursor: not-allowed;
+    }
+}

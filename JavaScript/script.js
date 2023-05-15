@@ -1,3 +1,5 @@
+alert ('Este projeto teve seu foco no desenvolvimento mobile. Para visualizar todas as funcionalidades do projeto, sugiro que o visualize em um dispositivo móvel ou aplique a responsividade em seu dispositivo uma resolução máxima de 700 pixels.')
+
 // Show More Promo Flash
 
 const arrowDownButton = document.querySelector('.flash_promo_icon_arrow_down')
@@ -81,34 +83,70 @@ const btnClose_1_flash = document.querySelector('#promo_flash_card_modal_iconClo
 const btnBuyModal_1_flash = document.querySelector('#promo_flash_card_modal_btnBuy_1')
 const modal_1_flash = document.querySelector('#promo_flash_card_modal_1')
 
+const divTabletAndDesk = document.querySelector('.promo_flash_displayTabletDesk')
+
 
 btnBuy_1_flash.addEventListener('click', function () {
-    modal_1_flash.style.left = '0'
-    modal_1_flash.style.position = 'relative'
-    modal_1_flash.style.marginBottom = '1rem'
+    if (window.innerWidth < 700) {
+        modal_1_flash.style.left = '0'
+        modal_1_flash.style.position = 'relative'
+        modal_1_flash.style.marginBottom = '1rem'
 
-    document.addEventListener('click', function (event) {
-        if (!modal_1_flash.contains(event.target) && !btnBuy_1_flash.contains(event.target)) { // Esse código faz com que ao clicar fora do Modal ele feche automaticamente
-            modal_1_flash.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_1_flash.style.position = "absolute"
-            }, 950)
-        }
-    })
-})
+        document.addEventListener('click', function (event) {
+            if (!modal_1_flash.contains(event.target) && !btnBuy_1_flash.contains(event.target)) { // Esse código faz com que ao clicar fora do Modal ele feche automaticamente
+                modal_1_flash.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_1_flash.style.position = "absolute"
+                }, 950)
+            }
+        })
+    } else if (window.innerWidth < 992) {
+        modal_1_flash.style.position = 'relative'
+        modal_1_flash.style.left = '0'
+
+        document.addEventListener('click', function(event){
+            if (!modal_1_flash.contains(event.target) && !btnBuy_1_flash.contains(event.target)) {
+                modal_1_flash.style.left = '-37.5rem'
+                setTimeout(function(){
+                    modal_1_flash.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {
+
+    }
+}) 
 
 btnClose_1_flash.addEventListener("click", function () {
-    modal_1_flash.style.left = "-21.875rem"
-    setTimeout(function () {
-        modal_1_flash.style.position = "absolute"
-    }, 950)
+    if (window.innerWidth < 700) {
+        modal_1_flash.style.left = "-21.875rem"
+        setTimeout(function () {
+            modal_1_flash.style.position = "absolute"
+        }, 950)
+    } else if (window.innerWidth < 992) {
+        modal_1_flash.style.left = '-37.5rem'
+        setTimeout(function(){
+            modal_1_flash.style.position = 'absolute'
+        }, 950)
+    } else {
+
+    }
 })
 
 btnBuyModal_1_flash.addEventListener('click', function () {
-    modal_1_flash.style.left = "-21.875rem"
-    setTimeout(function () {
-        modal_1_flash.style.position = "absolute"
-    }, 950)
+    if (window.innerWidth < 700) {
+        modal_1_flash.style.left = "-21.875rem"
+        setTimeout(function () {
+            modal_1_flash.style.position = "absolute"
+        }, 950)
+    } else if (window.innerWidth < 992) {
+        modal_1_flash.style.left = '-37.5rem'
+        setTimeout(function(){
+            modal_1_flash.style.position = 'absolute'
+        }, 950)
+    } else {
+
+    }
 })
 // Modal 1 End
 
@@ -119,32 +157,66 @@ const btnBuyModal_2_flash = document.querySelector('#promo_flash_card_modal_btnB
 const modal_2_flash = document.querySelector('#promo_flash_card_modal_2')
 
 btnBuy_2_flash.addEventListener('click', function () {
-    modal_2_flash.style.left = '0'
-    modal_2_flash.style.position = 'relative'
-    modal_2_flash.style.marginBottom = '1rem'
+    if (window.innerWidth < 700) {
+        modal_2_flash.style.left = '0'
+        modal_2_flash.style.position = 'relative'
+        modal_2_flash.style.marginBottom = '1rem'
+    
+        document.addEventListener('click', function (event) {
+            if (!modal_2_flash.contains(event.target) && !btnBuy_2_flash.contains(event.target)) {
+                modal_2_flash.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_2_flash.style.position = "absolute"
+                }, 950)
+            }
+        })
+    } else if (window.innerWidth < 992) {
+        modal_2_flash.style.position = 'relative'
+        modal_2_flash.style.left = '0'
 
-    document.addEventListener('click', function (event) {
-        if (!modal_2_flash.contains(event.target) && !btnBuy_2_flash.contains(event.target)) {
-            modal_2_flash.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_2_flash.style.position = "absolute"
-            }, 950)
-        }
-    })
+        document.addEventListener('click', function(event){
+            if (!modal_2_flash.contains(event.target) && !btnBuy_2_flash.contains(event.target)) {
+                modal_2_flash.style.left = '-37.5rem'
+                setTimeout(function(){
+                    modal_2_flash.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {
+
+    }
 })
 
 btnClose_2_flash.addEventListener("click", function () {
-    modal_2_flash.style.left = "-21.875rem"
-    setTimeout(function () {
-        modal_2_flash.style.position = "absolute"
-    }, 950)
+    if (window.innerWidth < 700) {
+        modal_2_flash.style.left = "-21.875rem"
+        setTimeout(function () {
+            modal_2_flash.style.position = "absolute"
+        }, 950)
+    } else if (window.innerWidth < 992) {
+        modal_2_flash.style.left = '-37.5rem'
+        setTimeout(function(){
+            modal_2_flash.style.position = 'absolute'
+        }, 950)
+    } else {
+
+    }
 })
 
 btnBuyModal_2_flash.addEventListener('click', function () {
-    modal_2_flash.style.left = "-21.875rem"
-    setTimeout(function () {
-        modal_2_flash.style.position = "absolute"
-    }, 950)
+    if (window.innerWidth < 700) {
+        modal_2_flash.style.left = "-21.875rem"
+        setTimeout(function () {
+            modal_2_flash.style.position = "absolute"
+        }, 950)
+    } else if (window.innerWidth < 992) {
+        modal_2_flash.style.left = '-37.5rem'
+        setTimeout(function(){
+            modal_2_flash.style.position = 'absolute'
+        }, 950)
+    } else {
+
+    }
 })
 // Modal 2 End
 
@@ -155,32 +227,66 @@ const btnBuyModal_3_flash = document.querySelector('#promo_flash_card_modal_btnB
 const modal_3_flash = document.querySelector('#promo_flash_card_modal_3')
 
 btnBuy_3_flash.addEventListener('click', function () {
-    modal_3_flash.style.left = '0'
-    modal_3_flash.style.position = 'relative'
-    modal_3_flash.style.marginBottom = '1rem'
+    if (window.innerWidth < 700) {
+        modal_3_flash.style.left = '0'
+        modal_3_flash.style.position = 'relative'
+        modal_3_flash.style.marginBottom = '1rem'
+    
+        document.addEventListener('click', function (event) {
+            if (!modal_3_flash.contains(event.target) && !btnBuy_3_flash.contains(event.target)) {
+                modal_3_flash.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_3_flash.style.position = "absolute"
+                }, 950)
+            }
+        })
+    } else if (window.innerWidth < 992) {
+        modal_3_flash.style.position = 'relative'
+        modal_3_flash.style.left = '0'
 
-    document.addEventListener('click', function (event) {
-        if (!modal_3_flash.contains(event.target) && !btnBuy_3_flash.contains(event.target)) {
-            modal_3_flash.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_3_flash.style.position = "absolute"
-            }, 950)
-        }
-    })
+        document.addEventListener('click', function(event){
+            if (!modal_3_flash.contains(event.target) && !btnBuy_3_flash.contains(event.target)) {
+                modal_3_flash.style.left = '-37.5rem'
+                setTimeout(function(){
+                    modal_3_flash.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {
+
+    }
 })
 
 btnClose_3_flash.addEventListener("click", function () {
-    modal_3_flash.style.left = "-21.875rem"
-    setTimeout(function () {
-        modal_3_flash.style.position = "absolute"
-    }, 950)
+    if (window.innerWidth < 700) {
+        modal_3_flash.style.left = "-21.875rem"
+        setTimeout(function () {
+            modal_3_flash.style.position = "absolute"
+        }, 950)
+    } else if (window.innerWidth < 992) {
+        modal_3_flash.style.left = '-37.5rem'
+        setTimeout(function(){
+            modal_3_flash.style.position = 'absolute'
+        }, 950)
+    } else {
+
+    }
 })
 
 btnBuyModal_3_flash.addEventListener('click', function () {
-    modal_3_flash.style.left = "-21.875rem"
-    setTimeout(function () {
-        modal_3_flash.style.position = "absolute"
-    }, 950)
+    if (window.innerWidth < 700) {
+        modal_3_flash.style.left = "-21.875rem"
+        setTimeout(function () {
+            modal_3_flash.style.position = "absolute"
+        }, 950)
+    } else if (window.innerWidth < 992) {
+        modal_3_flash.style.left = '-37.5rem'
+        setTimeout(function(){
+            modal_3_flash.style.position = 'absolute'
+        }, 950)
+    } else {
+
+    }
 })
 // Modal 3 End
 
@@ -191,33 +297,69 @@ const btnBuyModal_4_flash = document.querySelector('#promo_flash_card_modal_btnB
 const modal_4_flash = document.querySelector('#promo_flash_card_modal_4')
 
 btnBuy_4_flash.addEventListener('click', function () {
-    modal_4_flash.style.left = '0'
-    modal_4_flash.style.position = 'relative'
-    modal_4_flash.style.marginBottom = '1rem'
+    if (window.innerWidth < 700) {
+        modal_4_flash.style.left = '0'
+        modal_4_flash.style.position = 'relative'
+        modal_4_flash.style.marginBottom = '1rem'
+    
+        document.addEventListener('click', function (event) {
+            if (!modal_4_flash.contains(event.target) && !btnBuy_4_flash.contains(event.target)) {
+                modal_4_flash.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_4_flash.style.position = "absolute"
+                }, 950)
+            }
+        })
+    } else if (window.innerWidth < 992) {
+        modal_4_flash.style.position = 'relative'
+        modal_4_flash.style.marginBottom = '2rem'
+        modal_4_flash.style.left = '0'
 
-    document.addEventListener('click', function (event) {
-        if (!modal_4_flash.contains(event.target) && !btnBuy_4_flash.contains(event.target)) {
-            modal_4_flash.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_4_flash.style.position = "absolute"
-            }, 950)
-        }
-    })
+        document.addEventListener('click', function(event){
+            if (!modal_4_flash.contains(event.target) && !btnBuy_4_flash.contains(event.target)) {
+                modal_4_flash.style.left = '-37.5rem'
+                setTimeout(function(){
+                    modal_4_flash.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {
+
+    }
 })
 
 btnClose_4_flash.addEventListener("click", function () {
-    modal_4_flash.style.left = "-21.875rem"
-    setTimeout(function () {
-        modal_4_flash.style.position = "absolute"
-    }, 950)
+    if (window.innerWidth < 700) {
+        modal_4_flash.style.left = "-21.875rem"
+        setTimeout(function () {
+            modal_4_flash.style.position = "absolute"
+        }, 950)
+    } else if (window.innerWidth < 992) {
+        modal_4_flash.style.left = '-37.5rem'
+        setTimeout(function(){
+            modal_4_flash.style.position = 'absolute'
+        }, 950)
+    } else {
+
+    }
 })
 
 btnBuyModal_4_flash.addEventListener('click', function () {
-    modal_4_flash.style.left = "-21.875rem"
-    setTimeout(function () {
-        modal_4_flash.style.position = "absolute"
-    }, 950)
+    if (window.innerWidth < 700) {
+        modal_4_flash.style.left = "-21.875rem"
+        setTimeout(function () {
+            modal_4_flash.style.position = "absolute"
+        }, 950)
+    } else if (window.innerWidth < 992) {
+        modal_4_flash.style.left = '-37.5rem'
+        setTimeout(function(){
+            modal_4_flash.style.position = 'absolute'
+        }, 950)
+    } else {
+
+    }
 })
+
 // Modal 4 End
 
 // Modal End
@@ -239,7 +381,7 @@ btnSeeLessNewProducts.addEventListener('click', function () {
     setTimeout(function () {
         moreNewProducts.style.position = 'absolute'
     }, 950)
-    setTimeout(function(){
+    setTimeout(function () {
         btnShowMoreNewProducts.style.display = 'inline-block'
     }, 980)
 })
@@ -255,17 +397,19 @@ const modal_1_new = document.querySelector('#new_product_modal_1')
 const btnBuyModal_1_new = document.querySelector('#new_card__btnBuy_1')
 
 btnBuy_1_new.addEventListener('click', function () {
-    modal_1_new.style.position = 'relative'
-    modal_1_new.style.left = '0'
-    modal_1_new.style.marginBottom = '1rem'
-    document.addEventListener('click', function (event) {
-        if (!modal_1_new.contains(event.target) && !btnBuy_1_new.contains(event.target)) {
-            modal_1_new.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_1_new.style.position = 'absolute'
-            }, 950)
-        }
-    })
+    if (window.innerWidth < 700) {
+        modal_1_new.style.position = 'relative'
+        modal_1_new.style.left = '0'
+        modal_1_new.style.marginBottom = '1rem'
+        document.addEventListener('click', function (event) {
+            if (!modal_1_new.contains(event.target) && !btnBuy_1_new.contains(event.target)) {
+                modal_1_new.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_1_new.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {} //Desabilitei os modais na versão de tablet
 })
 
 btnClose_1_new.addEventListener('click', function () {
@@ -290,17 +434,19 @@ const modal_2_new = document.querySelector('#new_product_modal_2')
 const btnBuyModal_2_new = document.querySelector('#new_card__btnBuy_2')
 
 btnBuy_2_new.addEventListener('click', function () {
-    modal_2_new.style.position = 'relative'
-    modal_2_new.style.left = '0'
-    modal_2_new.style.marginBottom = '1rem'
-    document.addEventListener('click', function (event) {
-        if (!modal_2_new.contains(event.target) && !btnBuy_2_new.contains(event.target)) {
-            modal_2_new.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_2_new.style.position = 'absolute'
-            }, 950)
-        }
-    })
+    if (window.innerWidth < 700) {
+        modal_2_new.style.position = 'relative'
+        modal_2_new.style.left = '0'
+        modal_2_new.style.marginBottom = '1rem'
+        document.addEventListener('click', function (event) {
+            if (!modal_2_new.contains(event.target) && !btnBuy_2_new.contains(event.target)) {
+                modal_2_new.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_2_new.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {} //Desabilitei os modais na versão de tablet
 })
 
 btnClose_2_new.addEventListener('click', function () {
@@ -325,17 +471,19 @@ const modal_3_new = document.querySelector('#new_product_modal_3')
 const btnBuyModal_3_new = document.querySelector('#new_card__btnBuy_3')
 
 btnBuy_3_new.addEventListener('click', function () {
-    modal_3_new.style.position = 'relative'
-    modal_3_new.style.left = '0'
-    modal_3_new.style.marginBottom = '1rem'
-    document.addEventListener('click', function (event) {
-        if (!modal_3_new.contains(event.target) && !btnBuy_3_new.contains(event.target)) {
-            modal_3_new.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_3_new.style.position = 'absolute'
-            }, 950)
-        }
-    })
+    if (window.innerWidth < 700) {
+        modal_3_new.style.position = 'relative'
+        modal_3_new.style.left = '0'
+        modal_3_new.style.marginBottom = '1rem'
+        document.addEventListener('click', function (event) {
+            if (!modal_3_new.contains(event.target) && !btnBuy_3_new.contains(event.target)) {
+                modal_3_new.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_3_new.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {} //Desabilitei os modais na versão de tablet
 })
 
 btnClose_3_new.addEventListener('click', function () {
@@ -473,17 +621,19 @@ const modal_1_sports = document.querySelector('#sports_product_modal_1')
 const btnBuyModal_1_sports = document.querySelector('#sports_card__btnBuy_1')
 
 btnBuy_1_sports.addEventListener('click', function () {
-    modal_1_sports.style.position = 'relative'
-    modal_1_sports.style.left = '0'
-    modal_1_sports.style.marginBottom = '1rem'
-    document.addEventListener('click', function (event) {
-        if (!modal_1_sports.contains(event.target) && !btnBuy_1_sports.contains(event.target)) {
-            modal_1_sports.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_1_sports.style.position = 'absolute'
-            }, 950)
-        }
-    })
+    if (window.innerWidth < 700) {
+        modal_1_sports.style.position = 'relative'
+        modal_1_sports.style.left = '0'
+        modal_1_sports.style.marginBottom = '1rem'
+        document.addEventListener('click', function (event) {
+            if (!modal_1_sports.contains(event.target) && !btnBuy_1_sports.contains(event.target)) {
+                modal_1_sports.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_1_sports.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {} //Desabilitei os modais na versão de tablet
 })
 
 btnClose_1_sports.addEventListener('click', function () {
@@ -508,17 +658,19 @@ const modal_2_sports = document.querySelector('#sports_product_modal_2')
 const btnBuyModal_2_sports = document.querySelector('#sports_card__btnBuy_2')
 
 btnBuy_2_sports.addEventListener('click', function () {
-    modal_2_sports.style.position = 'relative'
-    modal_2_sports.style.left = '0'
-    modal_2_sports.style.marginBottom = '1rem'
-    document.addEventListener('click', function (event) {
-        if (!modal_2_sports.contains(event.target) && !btnBuy_2_sports.contains(event.target)) {
-            modal_2_sports.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_2_sports.style.position = 'absolute'
-            }, 950)
-        }
-    })
+    if (window.innerWidth < 700) {
+        modal_2_sports.style.position = 'relative'
+        modal_2_sports.style.left = '0'
+        modal_2_sports.style.marginBottom = '1rem'
+        document.addEventListener('click', function (event) {
+            if (!modal_2_sports.contains(event.target) && !btnBuy_2_sports.contains(event.target)) {
+                modal_2_sports.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_2_sports.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {} //Desabilitei os modais na versão de tablet
 })
 
 btnClose_2_sports.addEventListener('click', function () {
@@ -544,17 +696,19 @@ const modal_3_sports = document.querySelector('#sports_product_modal_3')
 const btnBuyModal_3_sports = document.querySelector('#sports_card__btnBuy_3')
 
 btnBuy_3_sports.addEventListener('click', function () {
-    modal_3_sports.style.position = 'relative'
-    modal_3_sports.style.left = '0'
-    modal_3_sports.style.marginBottom = '1rem'
-    document.addEventListener('click', function (event) {
-        if (!modal_3_sports.contains(event.target) && !btnBuy_3_sports.contains(event.target)) {
-            modal_3_sports.style.left = '-21.875rem'
-            setTimeout(function () {
-                modal_3_sports.style.position = 'absolute'
-            }, 950)
-        }
-    })
+    if (window.innerWidth < 700) {
+        modal_3_sports.style.position = 'relative'
+        modal_3_sports.style.left = '0'
+        modal_3_sports.style.marginBottom = '1rem'
+        document.addEventListener('click', function (event) {
+            if (!modal_3_sports.contains(event.target) && !btnBuy_3_sports.contains(event.target)) {
+                modal_3_sports.style.left = '-21.875rem'
+                setTimeout(function () {
+                    modal_3_sports.style.position = 'absolute'
+                }, 950)
+            }
+        })
+    } else {} //Desabilitei os modais na versão de tablet
 })
 
 btnClose_3_sports.addEventListener('click', function () {
@@ -589,7 +743,7 @@ btnSeeLessSportsProducts.addEventListener('click', function () {
     setTimeout(function () {
         moreSportsProducts.style.position = 'absolute'
     }, 950)
-    setTimeout(function(){
+    setTimeout(function () {
         btnShowMoreSports.style.display = 'inline-block'
     }, 980)
 })

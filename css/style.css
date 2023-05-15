@@ -1,6 +1,6 @@
 @import url('header.css'); /**/
 @import url('promo_flash.css'); /**/
-@import url('news.css'); /**/
+@import url('new.css'); /**/
 @import url('sports.css'); /**/
 @import url('collections.css'); /**/
 @import url('end_page.css'); /**/
@@ -21,6 +21,15 @@ body {
     src: url("fonts/helvetica.ttf");
     background-color: #E4E4E4;
     font-size: .875rem;
+}
+
+/* Button */
+
+.buttonBuy {
+    background-color: var(--green_color);
+    border-radius: 1rem;
+    color: var(--white_color);
+    padding: 0.5rem 1rem;
 }
 
 @media screen and (min-width: 700px) {

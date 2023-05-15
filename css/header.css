@@ -13,20 +13,33 @@ header {
     justify-content: center;
 }
 
+.promo_flash_content {
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.promo_flash_content_paragraph {
+    display: flex;
+}
+
+.flash_promo_icon_ray {
+    width: 1rem;
+}
+
 .flash_promo_paragraph {
     color: var(--white_color);
     padding: 0 .3125rem;
 }
 
 .flash_promo_icon_arrow_down {
-    position: absolute;
-    right: 6rem;
+    margin-left: 2rem;
 }
 
 .flash_promo_icon_arrow_up {
     display: none;
-    position: absolute;
-    right: 6rem;
+    margin-left: 2rem;
 }
 
 /* Div Promo_flash */
@@ -82,6 +95,10 @@ header {
 }
 
 .nav_list_iconProfile {
+    display: none;
+}
+
+.nav_list_input_desktop {
     display: none;
 }
 
@@ -157,6 +174,9 @@ header {
     padding: 1rem;
 }
 
+.nav_list_input {
+    display: none;
+}
 
 /* Burguer Menu End */
 
@@ -258,6 +278,7 @@ header {
 
     .nav_list_iconProfile {
         display: inline-block;
+        margin-right: 1rem;
     }
 
     .nav_icon_basket {
@@ -265,6 +286,7 @@ header {
     }
 
     .nav_list_input {
+        display: block;
         align-items: center;
         border: .0625rem solid var(--gray_color);
         border-radius: 1rem;
@@ -298,3 +320,84 @@ header {
         margin-top: 0;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    /* Display None */
+    .nav_list_input {
+        display: none;
+    }
+
+    /* Display None End */
+
+    .flash_promo_icon_arrow_down, .flash_promo_icon_arrow_up {
+        cursor: pointer;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 1rem;
+    }
+    
+    .nav_list {
+        margin-left: 15rem;
+    }
+
+    .nav_inputAndIcons_tabletAndDesk {
+        align-items: center;
+        display: flex;
+    }
+
+    .nav_list_input_desktop {
+        display: block;
+        align-items: center;
+        border: .0625rem solid var(--gray_color);
+        border-radius: 1rem;
+        display: flex;
+        padding: .1875rem;
+        width: 15.625rem;
+    }
+    
+    .nav_list_search_desktop {
+        background-color: transparent;
+        width: 15rem;
+    }
+    
+    .nav_list_search_desktop:focus {
+        outline: 0;
+    }
+    
+    .nav_list_input_desktop::after {
+        content: "";
+        display: inline-block;
+        background-image: url("/images/icons/icon_search.png");
+        background-size: 100%;
+        height: .9375rem;
+        margin-right: .375rem;
+        width: .9375rem;
+    }
+
+    .nav_icon_basket, .nav_list_iconProfile {
+        cursor: pointer;
+    }
+
+    .nav_icon_basket {
+        margin-left: 1rem;
+    }
+
+    .carousel_abaut_content_paragraph {
+        cursor: pointer;
+    }
+
+    .carousel_abaut_icon_preview, .carousel_abaut_icon_next {
+        cursor: pointer;
+        margin: 0 30rem;
+    }
+
+    .carousel_images {
+        height: 700px;
+        width: 100%;
+    }
+}
+
+

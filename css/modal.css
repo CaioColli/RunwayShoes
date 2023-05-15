@@ -25,6 +25,7 @@
     position: absolute;
     transition: 1s;
     width: 18.125rem;
+    padding: 1rem 0;
 }
 /* Box Modal New And Sports End */
 
@@ -126,13 +127,17 @@
     margin-bottom: 1rem;
 }
 
-.promo_flash_card_modal_btnBuy, .new_product_btnBuy, .sports_product_btnBuy {
-    background-color: var(--green_color);
-    border-radius: 1rem;
-    color: var(--white_color);
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-    width: 6rem;
-}
+
 
 /* Modal End*/
+
+@media screen and (min-width: 700px) {
+    .promo_flash_card_modal {
+        width: 70%;
+    }
+
+    #promo_flash_card_modal_1, #promo_flash_card_modal_2, #promo_flash_card_modal_3, #promo_flash_card_modal_4 {
+        position: absolute;
+        left: -500px;
+    }
+}
